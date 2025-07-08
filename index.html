@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Sepet Uygulaması</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+
+    input, button {
+      padding: 8px;
+      margin: 5px;
+    }
+
+    ul {
+      margin-top: 20px;
+    }
+
+    .product-item {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Kullanıcı Bilgileri</h2>
+  <p>Ad: <span id="userName"></span> | Yaş: <span id="userAge"></span> | Meslek: <span id="userJob"></span></p>
+
+  <h2>Ürün Ekle</h2>
+  <input type="text" id="productName" placeholder="Ürün adı">
+  <input type="number" id="productPrice" placeholder="Fiyat">
+  <button onclick="addProduct()">Ekle</button>
+
+  <h2>Sepet</h2>
+  <ul id="cartList"></ul>
+  <p><strong>Toplam Fiyat: </strong><span id="totalPrice">0</span>₺</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
